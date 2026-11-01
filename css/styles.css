@@ -1,0 +1,1366 @@
+/* ==============================
+   Navbar
+================================= */
+body {
+  font-family: "Chakra Petch", sans-serif;
+}
+
+.site-navbar {
+  background-color: #0b0f13;
+}
+
+/* Navbar Logo */
+.site-navbar .navbar-brand {
+  color: #cbfe1c;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Logo Icon */
+.site-navbar .navbar-brand i {
+  font-size: 25px;
+  line-height: 1;
+}
+
+/* Logo Hover */
+.site-navbar .navbar-brand:hover,
+.site-navbar .navbar-brand:focus {
+  color: #cbfe1c;
+}
+
+/* Navigation Links */
+.site-navbar .nav-link {
+  color: #b8bcc5;
+  font-size: 14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+/* Active Link & Hover */
+.site-navbar .nav-link.active,
+.site-navbar .nav-link:hover {
+  color: #b6f23a;
+}
+
+/* Navbar Icons */
+.site-navbar .navbar-actions a {
+  color: #b8bcc5;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.site-navbar .navbar-actions a:hover {
+  color: #b6f23a;
+}
+
+/* Sign In Button */
+.site-navbar .btn-signin {
+  background-color: #b6f23a;
+  color: #0b0f13;
+  border: 1px solid #b6f23a;
+  border-radius: 8px;
+  padding: 8px 20px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.site-navbar .btn-signin:hover {
+  background-color: #d4ff73;
+  border-color: #d4ff73;
+  color: #0b0f13;
+}
+
+/* ==============================
+   Hero Section
+================================= */
+
+.hero-section {
+  background-color: #0b0f13;
+
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../images/hero-bg.jpg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  color: #ffffff;
+  padding: 100px 0;
+}
+
+.hero-content h1 {
+  font-family: "Days One", sans-serif;
+  font-size: clamp(36px, 4vw, 64px);
+  font-weight: 400;
+  line-height: 1.15;
+  margin-bottom: 24px;
+}
+
+.hero-content p {
+  color: #a9adb5;
+  font-size: 17px;
+  line-height: 1.8;
+  max-width: 550px;
+  margin-bottom: 0;
+}
+
+/* ==============================
+   Hero Buttons
+================================= */
+
+.hero-buttons .btn {
+  padding: 14px 26px;
+  font-weight: 700;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Primary Button */
+.hero-btn-primary {
+  background-color: #cbfe1c;
+  color: #0b0f13;
+  border: 1px solid #cbfe1c;
+}
+
+.hero-btn-primary:hover {
+  background-color: #a8db00;
+  border-color: #a8db00;
+  color: #0b0f13;
+}
+
+/* Outline Hero Button */
+.hero-btn-outline {
+  background-color: transparent;
+  color: #cbfe1c;
+  border: 2px solid #cbfe1c;
+}
+
+.hero-btn-outline:hover {
+  background-color: #cbfe1c;
+  color: #0b0f13;
+  border-color: #cbfe1c;
+}
+
+/* Hero Image */
+.hero-image-wrapper {
+  border: 4px solid #cbfe1c;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.hero-image-wrapper img {
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+  display: block;
+}
+.hero-highlight {
+  color: #cbfe1c;
+}
+
+/* ==============================
+   Active Players Card
+================================= */
+
+.players-card {
+  bottom: -24px;
+  left: -24px;
+  z-index: 2;
+
+  background-color: #0b0f13;
+  border: 1px solid #303741;
+  border-radius: 10px;
+  padding: 18px 22px;
+}
+
+/* Trophy Icon */
+.players-card i {
+  color: #cbfe1c;
+  font-size: 22px;
+}
+
+/* Card Label */
+.players-label {
+  color: #9ca3af;
+  font-size: 12px;
+}
+
+/* Players Number */
+.players-count {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+@media (max-width: 575.98px) {
+  .players-card {
+    left: 12px;
+    bottom: -22px;
+    padding: 12px 16px;
+  }
+
+  .players-count {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero-section .container {
+    max-width: 1240px;
+  }
+}
+
+/* Hero Responsive */
+@media (max-width: 991.98px) {
+  .hero-content h1 {
+    font-size: clamp(30px, 6.5vw, 44px);
+    line-height: 1.15;
+  }
+
+  .hero-content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* Mobile Navbar */
+.site-navbar .navbar-toggler {
+  border: none;
+  padding: 4px;
+}
+
+.site-navbar .navbar-toggler:focus {
+  box-shadow: none;
+}
+
+.site-navbar .navbar-toggler:focus-visible {
+  outline: 2px solid #cbfe1c;
+  outline-offset: 4px;
+}
+
+/* ==============================
+   Our Games Section
+================================= */
+
+.games-section {
+  background-color: #11161c;
+  color: #ffffff;
+}
+
+/* Section Subtitle */
+.games-subtitle {
+  font-family: "Chakra Petch", sans-serif;
+  color: #cbfe1c;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.games-subtitle::before,
+.games-subtitle::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+}
+
+.games-subtitle::before {
+  background: linear-gradient(to right, transparent, #cbfe1c);
+}
+
+.games-subtitle::after {
+  background: linear-gradient(to left, transparent, #cbfe1c);
+}
+
+/* Section Heading */
+.games-title {
+  font-family: "Days One", sans-serif;
+  font-size: clamp(30px, 4vw, 44px);
+  font-weight: 400;
+  color: #ffffff;
+}
+
+/* ==============================
+   Game Cards
+================================= */
+
+.game-card {
+  background-color: #1b222b;
+  border: 1px solid #303741;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+/* Game Image */
+.game-card .card-img-top {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+/* Card Body */
+.game-card .card-body {
+  padding: 24px;
+}
+
+/* Game Title */
+.game-card .card-title {
+  font-family: "Chakra Petch", sans-serif;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 0;
+}
+
+/* Game Categories */
+.game-badge {
+  background-color: #303741;
+  color: #cbfe1c;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 7px 10px;
+}
+
+/* Game Card Hover */
+.game-card:hover {
+  transform: translateY(-8px);
+  border-color: #cbfe1c;
+}
+
+/* Image Zoom */
+.game-card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Games Slider - Initial Styling */
+
+.games-section {
+  background-color: #0b0e13;
+}
+
+.game-card {
+  background: transparent;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.game-card .card-img-top {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 16px;
+}
+
+/* Temporarily Hide Card Details */
+
+/* Disable Previous Hover Effects */
+.game-card:hover {
+  transform: none;
+  border-color: transparent;
+}
+
+.game-card:hover .card-img-top {
+  transform: none;
+}
+
+/* Games Navigation Arrows */
+.games-arrow {
+  width: 54px;
+  height: 54px;
+  border: 2px solid #303741;
+  border-radius: 50%;
+  background-color: transparent;
+  color: #9ca3af;
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+
+.games-arrow:hover {
+  border-color: #cbfe1c;
+  color: #cbfe1c;
+}
+
+/* View All Games Button */
+.games-view-btn {
+  background-color: transparent;
+  color: #cbfe1c;
+  border: 2px solid #cbfe1c;
+  border-radius: 8px;
+  padding: 14px 30px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.games-view-btn:hover {
+  background-color: #cbfe1c;
+  border-color: #cbfe1c;
+  color: #0b0e13;
+}
+
+/* ==========================
+   Game Card Hover Overlay
+========================== */
+
+.game-card {
+  position: relative;
+  border: 2px solid transparent;
+}
+
+/* Green Gradient Overlay */
+.game-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(203, 254, 28, 0.95) 0%,
+    rgba(203, 254, 28, 0.45) 35%,
+    transparent 70%
+  );
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Card Details */
+.game-card .card-body {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 16px 22px;
+  opacity: 0;
+  visibility: hidden;
+
+  transition: opacity 0.3s ease;
+  z-index: 2;
+}
+
+/* Badges */
+.game-card .game-badge {
+  background-color: rgba(11, 15, 19, 0.85);
+  color: #ffffff;
+  border-radius: 20px;
+  padding: 8px 12px;
+}
+
+.game-badge i {
+  color: #cbfe1c;
+  margin-right: 5px;
+}
+/* Game Title */
+.game-card .card-title {
+  color: #0b0e13;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* Hover Effects */
+.game-card:hover {
+  border-color: #cbfe1c;
+}
+
+.game-card:hover::before {
+  opacity: 1;
+}
+
+.game-card:hover .card-body {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ==============================
+   What We Do Section
+================================= */
+
+.services-section {
+  background-color: #0b0e13;
+  color: #ffffff;
+}
+
+.services-subtitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+
+  color: #cbfe1c;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Decorative Lines */
+.services-subtitle::before,
+.services-subtitle::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+}
+
+.services-subtitle::before {
+  background: linear-gradient(to right, transparent, #cbfe1c);
+}
+
+.services-subtitle::after {
+  background: linear-gradient(to left, transparent, #cbfe1c);
+}
+
+/* Main Heading */
+.services-title {
+  font-family: "Days One", sans-serif;
+  font-size: clamp(30px, 4vw, 44px);
+  color: #ffffff;
+}
+
+/* Services Introduction */
+.services-intro {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Service Cards */
+.service-card {
+  min-height: 250px;
+  background-color: #1b1b1b;
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.service-feature-card h4 {
+  font-family: "Days One", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+/* Feature Service Cards */
+.service-feature-card {
+  position: relative;
+  border: 1px solid #2a313c;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+
+/* Corner Shapes */
+.service-feature-card::before,
+.service-feature-card::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  background-color: #cbfe1c;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.service-feature-card::before {
+  top: 14px;
+  left: 14px;
+  clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.service-feature-card::after {
+  right: 14px;
+  bottom: 14px;
+  clip-path: polygon(100% 100%, 0 100%, 100% 0);
+}
+
+/* Icon Box */
+.service-icon {
+  width: 66px;
+  height: 66px;
+  border-radius: 10px;
+  background-color: #1f2d44;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  transition: all 0.3s ease;
+}
+
+.service-icon i {
+  color: #cbfe1c;
+  font-size: 28px;
+  transition: all 0.3s ease;
+}
+
+/* Card Hover */
+.service-feature-card:hover {
+  border-color: #cbfe1c;
+  transform: translateY(-6px);
+}
+
+.service-feature-card:hover::before,
+.service-feature-card:hover::after {
+  opacity: 1;
+}
+
+.service-feature-card:hover .service-icon {
+  background-color: #cbfe1c;
+}
+
+.service-feature-card:hover .service-icon i {
+  color: #0b0e13;
+}
+
+/* Service Images */
+
+.service-image {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.service-image img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}
+
+.services-divider {
+  width: 55%;
+  max-width: 600px;
+  height: 2px;
+
+  background: linear-gradient(to right, transparent, #cbfe1c, transparent);
+
+  box-shadow: 0 0 12px 3px rgba(203, 254, 28, 0.35);
+}
+
+/* Fixed Navbar Spacing */
+body {
+  padding-top: 75px;
+}
+
+@media (max-width: 991.98px) {
+  body {
+    padding-top: 64px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 90px;
+}
+
+@media (max-width: 991.98px) {
+  html {
+    scroll-padding-top: 75px;
+  }
+}
+
+/* ==============================
+   Gaming Logos Marquee
+================================= */
+
+.logos-section {
+  background-color: #0b0e13;
+  padding: 24px 0 48px;
+  overflow: hidden;
+  background-image: radial-gradient(
+    ellipse 55% 70% at 50% 55%,
+    rgba(203, 254, 28, 0.22),
+    transparent 75%
+  );
+}
+
+.logos-row {
+  width: 100%;
+  overflow: hidden;
+}
+
+.logos-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-logos 40s linear infinite;
+}
+
+.logos-group {
+  display: flex;
+  flex: 0 0 auto;
+  gap: 16px;
+  padding-right: 16px;
+}
+
+.logos-group img {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 14px;
+  flex-shrink: 0;
+}
+
+/* Continuous Scrolling */
+@keyframes scroll-logos {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-33.333333%);
+  }
+}
+
+/* Opposite Direction */
+.logos-track.reverse {
+  animation-direction: reverse;
+}
+
+/* Space Between Rows */
+.logos-row + .logos-row {
+  margin-top: 16px;
+}
+
+/* Mobile */
+@media (max-width: 575.98px) {
+  .logos-group img {
+    width: 76px;
+    height: 76px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .logos-track {
+    animation: none;
+  }
+}
+
+/* Fade on Both Sides */
+.logos-row {
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+
+  mask-image: linear-gradient(
+    to right,
+    transparent,
+    black 10%,
+    black 90%,
+    transparent
+  );
+}
+
+/* ==============================
+   Our Team Section
+================================= */
+
+.team-section {
+  background-color: #0b0e13;
+  color: #ffffff;
+}
+
+.team-subtitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  color: #cbfe1c;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.team-subtitle::before,
+.team-subtitle::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: #cbfe1c;
+}
+
+.team-title {
+  font-family: "Days One", sans-serif;
+  font-size: clamp(30px, 4vw, 44px);
+  margin-bottom: 20px;
+}
+
+.team-description {
+  color: #9ca3af;
+  font-size: 16px;
+}
+
+/* Team Card */
+.team-card {
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.team-card img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+
+/* Team Information Overlay */
+.team-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+
+  padding: 45px 22px 20px;
+
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+}
+
+/* Member Name */
+.team-info h3 {
+  font-family: "Days One", sans-serif;
+  font-size: 18px;
+  line-height: 1.4;
+  color: #ffffff;
+  margin-bottom: 5px;
+  max-width: 190px;
+}
+
+/* Member Role */
+.team-info p {
+  font-size: 12px;
+  color: #c4c7cf;
+  margin-bottom: 3px;
+  transition: color 0.4s ease;
+}
+
+/* Member Achievement */
+.team-info span {
+  display: block;
+  color: #a9adb5;
+  font-size: 11px;
+}
+
+/* Player Nickname */
+.team-nickname {
+  position: absolute;
+  right: 14px;
+  bottom: 20px;
+  z-index: 3;
+  color: #c4c7cf;
+  transition: color 0.4s ease;
+
+  writing-mode: vertical-rl;
+
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* Team Image - Normal State */
+
+/* Hover State */
+.team-card:hover .team-info p,
+.team-card:hover .team-nickname {
+  color: #cbfe1c;
+}
+
+/* Smooth Glass Effect */
+.team-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+
+  background-color: rgba(0, 0, 0, 0.01);
+
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+
+  -webkit-mask-image: linear-gradient(to bottom, transparent 45%, black 100%);
+
+  mask-image: linear-gradient(to bottom, transparent 45%, black 100%);
+
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.team-card:hover::before {
+  opacity: 1;
+}
+
+/* Black & White Base Image */
+.team-photo-base {
+  filter: grayscale(100%);
+}
+
+/* Colored Image - Hidden Initially */
+.team-card .team-photo-reveal {
+  position: absolute;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  filter: grayscale(0%);
+  clip-path: inset(100% 0 0 0);
+
+  z-index: 1;
+
+  transition: clip-path 0.7s ease-in-out;
+}
+
+/* Curtain Reveal on Hover */
+.team-card:hover .team-photo-reveal {
+  clip-path: inset(0 0 0 0);
+}
+
+.team-card::before {
+  z-index: 2;
+}
+
+.team-info {
+  z-index: 3;
+}
+
+.team-nickname {
+  z-index: 4;
+}
+
+/* Our Team - Mobile & Small Tablets */
+@media (max-width: 767.98px) {
+  .team-title {
+    font-size: clamp(32px, 7vw, 44px);
+    max-width: 460px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .team-card .team-photo-base {
+    height: clamp(260px, 48vw, 320px);
+    object-fit: cover;
+  }
+}
+
+/* ==============================
+   Contact Us Section
+================================= */
+
+.contact-section {
+  background-color: #0b0e13;
+  color: #ffffff;
+  background: linear-gradient(180deg, #111827 0%, #0b0e13 65%, #0b0e13 100%);
+}
+
+/* Section Subtitle */
+.contact-subtitle {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+
+  color: #cbfe1c;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+/* Decorative Lines */
+.contact-subtitle::before,
+.contact-subtitle::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+}
+
+.contact-subtitle::before {
+  background: linear-gradient(to right, transparent, #cbfe1c);
+}
+
+.contact-subtitle::after {
+  background: linear-gradient(to left, transparent, #cbfe1c);
+}
+
+/* Main Heading */
+.contact-title {
+  font-family: "Days One", sans-serif;
+  font-size: clamp(30px, 4vw, 48px);
+  margin-bottom: 20px;
+}
+
+/* Description */
+.contact-description {
+  color: #9ca3af;
+  font-size: 16px;
+}
+
+/* ==============================
+   Contact Information
+================================= */
+
+.contact-item {
+  background-color: #1e293b;
+  border-radius: 16px;
+  padding: 30px 32px;
+  min-height: 150px;
+}
+
+/* Contact Icon */
+.contact-icon {
+  width: 64px;
+  height: 64px;
+  min-width: 64px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #cbfe1c;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.contact-icon i {
+  color: #0b0e13;
+  font-size: 24px;
+}
+
+/* Contact Details */
+.contact-details h3 {
+  font-family: "Days One", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 6px;
+}
+
+.contact-details p {
+  font-family: "Chakra Petch", sans-serif;
+  color: #9ca3af;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+
+.contact-details a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ==============================
+   Join Our Community
+================================= */
+
+/* Join Our Community */
+.community-card {
+  background: linear-gradient(110deg, #cbfe1c 0%, #77f54a 50%, #16d879 100%);
+
+  border-radius: 16px;
+  padding: 30px 32px;
+}
+
+/* Heading */
+.community-card h3 {
+  font-family: "Days One", sans-serif;
+  font-size: 20px;
+  color: #0b0e13;
+  margin-bottom: 18px;
+}
+
+/* Description */
+.community-card p {
+  color: #0b0e13;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 24px;
+}
+
+/* Social Icons */
+.social-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #0b0e13;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-icon i {
+  color: #cbfe1c;
+  font-size: 22px;
+}
+
+.social-icon i {
+  color: #cbfe1c;
+  font-size: 22px;
+}
+
+/* ==============================
+   Contact Form
+================================= */
+
+.contact-form-card {
+  background-color: #1e293b;
+  border-radius: 16px;
+  padding: 30px 32px;
+}
+
+/* Form Heading */
+.contact-form-title {
+  font-family: "Days One", sans-serif;
+  color: #ffffff;
+  font-size: 22px;
+}
+
+/* Form Labels */
+.contact-form-card .form-label {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Form Inputs */
+.contact-form-card .form-control {
+  background-color: #374151;
+  border: 1px solid #4b5563;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 12px 14px;
+  font-size: 14px;
+}
+
+/* Placeholder */
+.contact-form-card .form-control::placeholder {
+  color: #9ca3af;
+}
+
+/* Input Focus */
+.contact-form-card .form-control:focus {
+  background-color: #374151;
+  color: #ffffff;
+  border-color: #cbfe1c;
+  box-shadow: 0 0 0 3px rgba(203, 254, 28, 0.15);
+}
+
+/* Contact Form Select */
+.contact-form-card .form-select {
+  background-color: #374151;
+  border: 1px solid #4b5563;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 12px 14px;
+  font-size: 14px;
+}
+
+/* Select Focus */
+.contact-form-card .form-select:focus {
+  background-color: #374151;
+  color: #ffffff;
+  border-color: #cbfe1c;
+  box-shadow: 0 0 0 3px rgba(203, 254, 28, 0.15);
+}
+
+/* Newsletter Checkbox */
+.contact-form-card .form-check-label {
+  color: #9ca3af;
+  font-size: 14px;
+}
+
+.contact-form-card .form-check-input {
+  background-color: #ffffff;
+  border: 1px solid #9ca3af;
+}
+
+.contact-form-card .form-check-input:checked {
+  background-color: #cbfe1c;
+  border-color: #cbfe1c;
+}
+
+.contact-form-card .form-check-input:focus {
+  border-color: #cbfe1c;
+  box-shadow: 0 0 0 3px rgba(203, 254, 28, 0.15);
+}
+
+/* Send Message Button */
+.contact-submit-btn {
+  background-color: #cbfe1c;
+  color: #0b0e13;
+  font-size: 17px;
+  font-weight: 700;
+  padding: 16px 24px;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.contact-submit-btn:hover {
+  background-color: #b2e516;
+  color: #0b0e13;
+}
+
+.contact-submit-btn i {
+  font-size: 18px;
+}
+
+/* Support Statistics */
+.support-stats {
+  border-top: 1px solid #374151;
+}
+
+.support-stats h4 {
+  font-family: "Chakra Petch", sans-serif;
+  color: #cbfe1c;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.support-stats p {
+  color: #9ca3af;
+  font-size: 13px;
+  margin-bottom: 0;
+}
+
+.contact-item {
+  margin-bottom: 32px !important;
+}
+
+/* ==============================
+   Footer Section
+================================= */
+
+.site-footer {
+  background-color: #090c10;
+  color: #ffffff;
+  padding: 70px 0 30px;
+}
+
+/* Footer Brand */
+.footer-brand {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #cbfe1c;
+  text-decoration: none;
+}
+
+.footer-brand i {
+  margin-right: 8px;
+}
+
+.footer-brand:hover {
+  color: #cbfe1c;
+}
+
+/* Footer Description */
+.footer-description {
+  color: #9ca3af;
+  font-size: 14px;
+  line-height: 1.8;
+  margin-top: 20px;
+  max-width: 320px;
+}
+
+/* Footer Headings */
+.footer-heading {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+/* Footer Background */
+.site-footer {
+  background-color: #000000;
+}
+
+/* Footer Column Headings */
+.footer-heading {
+  font-family: "Days One", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 24px;
+}
+
+/* Footer Links */
+.footer-links {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links a {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 16px;
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #cbfe1c;
+}
+
+/* Footer Social Media */
+.footer-social {
+  color: #9ca3af;
+}
+
+.footer-social span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease;
+}
+
+.footer-social i {
+  font-size: 20px;
+  color: inherit;
+}
+
+/* Social Icons Hover */
+.footer-social span:hover {
+  color: #cbfe1c;
+}
+
+/* ==============================
+   Footer Bottom
+================================= */
+
+.footer-bottom {
+  border-top: 1px solid #303741;
+}
+
+/* Copyright */
+.footer-bottom p {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 14px;
+  color: #9ca3af;
+  text-align: center;
+}
+
+/* Footer Legal Links */
+.footer-legal a {
+  font-family: "Chakra Petch", sans-serif;
+  font-size: 14px;
+  color: #9ca3af;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-legal a:hover {
+  color: #cbfe1c;
+}
